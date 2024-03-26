@@ -1,3 +1,23 @@
+export default {
+ ACTIONS: { ADD:{type: "add"}, DELETE:{type: "delete"}, EDIT:{type: "edit"}, RETRIEVE_FROM_CLOUD:{type: "get"}, UPDATE_CLOUD:{type: "put"}},
+
+ storeReducer: (contactsInReducer, operationInReducer) => {
+	switch(operationInReducer.type){
+		case "add":
+		break;
+		case "delete":
+		break;
+		case "edit":
+		break;
+		case "get":
+		break;
+		case "put":
+		break;
+	}
+}
+}
+
+/*
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
@@ -20,9 +40,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				getActions().changeColor(0, "green");
 			},
 			loadSomeData: () => {
-				/**
-					fetch().then().then(data => setStore({ "foo": data.bar }))
-				*/
+					//fetch().then().then(data => setStore({ "foo": data.bar }))
 			},
 			changeColor: (index, color) => {
 				//get the store
@@ -41,5 +59,4 @@ const getState = ({ getStore, getActions, setStore }) => {
 		}
 	};
 };
-
-export default getState;
+*/
