@@ -13,24 +13,8 @@ const addStore = MyAppWityhoutContext => {
 		
 
 		useEffect(() => {
-			//update contacts from cloud
 			proceduresInContext(ACTIONS.RETRIEVE_FROM_CLOUD)
 		}, []);
-
-/*
-		const [state, setState] = useState(
-			getState({
-				getStore: () => state.store,
-				getActions: () => state.actions,
-				setStore: updatedStore =>
-					setState({
-						store: Object.assign(state.store, updatedStore),
-						actions: { ...state.actions }
-					})
-			})
-		);
-		*/
-
 
 		return (
 			<Context.Provider value={{contactsInContext, proceduresInContext, actions}}>
